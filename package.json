@@ -7,5 +7,15 @@
   "author": "Chris McGee <chris@chrismcgee.info>",
   "license": "MIT",
   "private": false,
-  "dependencies": {}
+  "dependencies": {
+    "@types/line-reader": "^0.0.28",
+    "@types/node": "^12.12.14",
+    "line-reader": "^0.4.0",
+    "tslint": "^5.20.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1"
+  }
 }
