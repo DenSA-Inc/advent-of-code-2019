@@ -7,6 +7,15 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "day-1b",
+      "program": "${workspaceFolder}/day-1b/index.js",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "day-1a",
       "skipFiles": [
         "<node_internals>/**"
