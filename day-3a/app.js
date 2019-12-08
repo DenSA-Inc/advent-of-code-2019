@@ -21,16 +21,16 @@ var move = function (array, input) {
     for (var index = 0; index < input.distance; index++) {
         switch (input.direction) {
             case Direction.Up:
-                array.push({ x: lastCoordinates.x, y: lastCoordinates.y + 1 });
+                array.push({ x: lastCoordinates.x, y: lastCoordinates.y + 1 + index });
                 break;
             case Direction.Down:
-                array.push({ x: lastCoordinates.x, y: lastCoordinates.y - 1 });
+                array.push({ x: lastCoordinates.x, y: lastCoordinates.y - 1 - index });
                 break;
             case Direction.Left:
-                array.push({ x: lastCoordinates.x - 1, y: lastCoordinates.y });
+                array.push({ x: lastCoordinates.x - 1 - index, y: lastCoordinates.y });
                 break;
             case Direction.Right:
-                array.push({ x: lastCoordinates.x + 1, y: lastCoordinates.y });
+                array.push({ x: lastCoordinates.x + 1 + index, y: lastCoordinates.y });
                 break;
         }
     }
